@@ -1,7 +1,8 @@
 # -----IOS-----代码片段
 
 
-#h2 修改图片的颜色
+## 修改图片的颜色
+<pre><code>
 - (UIImage *)jsq_image:(UIImage *)image maskedWithColor:(UIColor *)maskColor
 {
     CGRect imageRect = CGRectMake(0.0f, 0.0f, image.size.width, image.size.height);
@@ -21,3 +22,6 @@
     
     return newImage;
 }
+
+</code></pre>
+
