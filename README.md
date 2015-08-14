@@ -1,4 +1,5 @@
-# -----IOS-----代码
+# -----IOS-----代码片段
+
 
 #h2 修改图片的颜色
 - (UIImage *)jsq_image:(UIImage *)image maskedWithColor:(UIColor *)maskColor
