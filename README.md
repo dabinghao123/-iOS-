@@ -27,6 +27,7 @@
 
 
 ###使用类别旋转图片
+<pre>
 <code>
 - (UIImage*)imageRotatedByDegrees:(CGFloat)degrees
 {
@@ -55,5 +56,5 @@
     return newImage;
 }
 </code>
-
+</pre>
 
