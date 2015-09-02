@@ -58,3 +58,14 @@
 </code>
 </pre>
 
+<pre>
+### Push出现卡顿现象
+<code>
+最近才使用Xcode5 iOS7进行开发，遇到了个小问题，在使用navigation的pushViewController进行push的时候，两个页面间的动画会出现卡顿一下再推出的效果，最后找出，是因为iOS7 viewController背景颜色的问题，其实不是卡顿，是由于透明色颜色重叠后视觉上的问题，只要在新push里设置下背景颜色就好了
+    self.view.backgroundColor = [UIColorgrayColor];
+
+找个位置加上就正常显示了。
+</code>
+
+</pre>
+
