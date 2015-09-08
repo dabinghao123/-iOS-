@@ -69,3 +69,26 @@
 
 </pre>
 
+<pre>
+##点到线段的最短距离
+<code>
+double x1, y1, x2, y2, x3, y3;    
+double px = x2 - x1;
+double py = y2 - y1;
+double som = px * px + py * py;
+double u =  ((x3 - x1) * px + (y3 - y1) * py) / som;
+if (u > 1) {
+    u = 1;
+}
+if (u < 0) {
+    u = 0;
+}
+//the closest point
+double x = x1 + u * px;
+double y = y1 + u * py;
+double dx = x - x3;
+double dy = y - y3;      
+double dist = sqrt(dx*dx + dy*dy);
+<code>
+
+</pre>
