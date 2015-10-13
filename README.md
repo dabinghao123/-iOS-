@@ -99,6 +99,7 @@ double dist = sqrt(dx*dx + dy*dy);
 
 NSMutableArray  * copyArray = [[NSMutableArray alloc] initWithArray: _tmpArray] copyItem: YES];
 
+.m文件中
 - (id)copyWithZone:(NSZone *)zone
 {
     id copy = [[[self class] allocWithZone:zone]init];
