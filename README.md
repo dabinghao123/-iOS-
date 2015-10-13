@@ -92,3 +92,28 @@ double dist = sqrt(dx*dx + dy*dy);
 <code>
 
 </pre>
+
+<h2>arc copy </h2>
+
+<pre>
+
+NSMutableArray  * copyArray = [[NSMutableArray alloc] initWithArray: _tmpArray] copyItem: YES];
+
+- (id)copyWithZone:(NSZone *)zone
+{
+    id copy = [[[self class] allocWithZone:zone]init];
+    
+    if (copy)
+    {
+        [copy setStartPoint:_startPoint];
+        [copy setEndPoint:_endPoint];
+        [copy setLinecolor:_linecolor];
+        [copy setStatus:_status];
+        
+    }
+    
+    return copy;
+}
+
+</pre>
+
