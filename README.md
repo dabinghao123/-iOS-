@@ -70,7 +70,7 @@
 </pre>
 
 <pre>
-##点到线段的最短距离
+##点到线段的最短距离 线段中的a点(x1,y1) 线段中的b(x2,y2) 线段外的一点c(x3,y3)
 <code>
 double x1, y1, x2, y2, x3, y3;    
 double px = x2 - x1;
@@ -116,5 +116,26 @@ NSMutableArray  * copyArray = [[NSMutableArray alloc] initWithArray: _tmpArray] 
     return copy;
 }
 
+</pre>
+
+
+#移除searchIcon 
+
+<pre>
+<code>
+  //移除掉search icon
+    UITextField *txfSearchField = [searchbar valueForKey:@"_searchField"];
+    [txfSearchField setBackgroundColor:[UIColor whiteColor]];
+    [txfSearchField setLeftViewMode:UITextFieldViewModeNever];
+    [txfSearchField setRightViewMode:UITextFieldViewModeNever];
+//    [txfSearchField setBackground:[UIImage imageNamed:@"searchbar_bgImg.png"]];
+    txfSearchField.backgroundColor = [UIColor ColorWithHex:@"#8E8E93"];
+    [txfSearchField setBorderStyle:UITextBorderStyleNone];
+    //txfSearchField.layer.borderWidth = 8.0f;
+    txfSearchField.layer.cornerRadius = 10.0f;
+    
+    txfSearchField.layer.borderColor = [UIColor clearColor].CGColor;
+    txfSearchField.clearButtonMode = UITextFieldViewModeNever;
+</code>
 </pre>
 
