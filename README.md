@@ -139,3 +139,14 @@ NSMutableArray  * copyArray = [[NSMutableArray alloc] initWithArray: _tmpArray] 
 </code>
 </pre>
 
+
+//好用的库
+
+MMPlaceHolder  显示控件的宽高<br/>
+SDWebImage     加载图片  <br/>
+AFNetWorking   网络请求库<br/>
+Masonry        代码自动布局<br/>
+FMDB           第三方数据库<br/>
+
+
+
